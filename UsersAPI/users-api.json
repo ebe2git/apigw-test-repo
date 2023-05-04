@@ -32,7 +32,7 @@
   "components": {
     "schemas": {
       "users": {
-        "$ref": "https://raw.githubusercontent.com/ebe2git/apigw-test-repo/main/UsersAPI/users-schema.json"
+        "$ref": "https://raw.githubusercontent.com/ebe2git/apigw-test-repo/main/UsersAPI/users.json"
       }
     }
   }
