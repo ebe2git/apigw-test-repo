@@ -3,7 +3,7 @@
     xmlns:tns="http://www.cleverbuilder.com/BookSchema"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
-    targetNamespace="http://www.cleverbuilder.com/BookSchema/">
+    targetNamespace="http://www.cleverbuilder.com/BookSchema">
    <xsd:element name="Book" type="tns:BookType"/>
    <xsd:complexType name="BookType">
       <xsd:sequence>
@@ -12,11 +12,4 @@
         <xsd:element name="Author" type="xsd:string"/>
       </xsd:sequence>
     </xsd:complexType>
-    <!-- <xsd:element name="Books">
-      <xsd:complexType>
-        <xsd:sequence>
-          <xsd:element ref="tns:Book" minOccurs="0" maxOccurs="unbounded"/>
-        </xsd:sequence>
-      </xsd:complexType>
-   </xsd:element> -->
 </xsd:schema>
