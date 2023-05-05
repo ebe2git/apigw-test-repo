@@ -27,21 +27,21 @@
       <xsd:element name="GetBookResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element ref="book:Book" minOccurs="0" maxOccurs="1"/>
+            <xsd:element type="book:Book" minOccurs="0" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
       <xsd:element name="AddBook">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element ref="book:Book" minOccurs="1" maxOccurs="1"/>
+            <xsd:element type="book:Book" minOccurs="1" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
       <xsd:element name="AddBookResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element ref="book:Book" minOccurs="0" maxOccurs="1"/>
+            <xsd:element type="book:Book" minOccurs="0" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -51,7 +51,7 @@
       <xsd:element name="GetAllBooksResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element ref="book:Book" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element type="book:Book" minOccurs="0" maxOccurs="unbounded"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>

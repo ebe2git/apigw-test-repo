@@ -4,7 +4,8 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
     targetNamespace="http://www.cleverbuilder.com/BookSchema/">
-    <xsd:complexType name="Book">
+   <xsd:element name="Book" type=BookType/>
+   <xsd:complexType name="BookType">
       <xsd:sequence>
         <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
         <xsd:element name="Title" type="xsd:string"/>
