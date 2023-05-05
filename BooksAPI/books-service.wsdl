@@ -16,7 +16,7 @@
    -->
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.cleverbuilder.com/BookService/">
-      <import namespace="http://www.cleverbuilder.com/BookSchema" schemaLocation="http://" />
+      <import namespace="http://www.cleverbuilder.com/BookSchema" schemaLocation="https://raw.githubusercontent.com/ebe2git/apigw-test-repo/main/BooksAPI/books.xsd" />
       <xsd:element name="GetBook">
         <xsd:complexType>
           <xsd:sequence>
