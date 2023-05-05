@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-                  xmlns:tns="http://www.cleverbuilder.com/BookService/"
+                  xmlns:tns="http://www.cleverbuilder.com/BookService"
                   xmlns:book="http://www.cleverbuilder.com/BookSchema"
                   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                   name="BookService"
-                  targetNamespace="http://www.cleverbuilder.com/BookService/">
+                  targetNamespace="http://www.cleverbuilder.com/BookService">
   <wsdl:documentation>Definition for a web service called BookService,
     which can be used to add or retrieve books from a collection.
   </wsdl:documentation>
@@ -15,7 +15,7 @@
       that are used by the web service.
    -->
   <wsdl:types>
-    <xsd:schema targetNamespace="http://www.cleverbuilder.com/BookService/">
+    <xsd:schema targetNamespace="http://www.cleverbuilder.com/BookService">
       <import namespace="http://www.cleverbuilder.com/BookSchema" schemaLocation="https://raw.githubusercontent.com/ebe2git/apigw-test-repo/main/BooksAPI/books.xsd" />
       <xsd:element name="GetBook">
         <xsd:complexType>
@@ -27,21 +27,21 @@
       <xsd:element name="GetBookResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element type="book:Book" minOccurs="0" maxOccurs="1"/>
+            <xsd:element ref="book:Book" minOccurs="0" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
       <xsd:element name="AddBook">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element type="book:Book" minOccurs="1" maxOccurs="1"/>
+            <xsd:element ref="book:Book" minOccurs="1" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
       <xsd:element name="AddBookResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element type="book:Book" minOccurs="0" maxOccurs="1"/>
+            <xsd:element ref="book:Book" minOccurs="0" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -51,7 +51,7 @@
       <xsd:element name="GetAllBooksResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element type="book:Book" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="book:Book" minOccurs="0" maxOccurs="unbounded"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
