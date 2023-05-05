@@ -6,7 +6,7 @@
 
   <types>
     <xsd:schema targetNamespace="http://example.com/myservice/">
-      <xsd:import namespace="http://example.com/myservice/" schemaLocation="myservice.xsd"/>
+      <xsd:import namespace="http://example.com/myservice/" schemaLocation="https://raw.githubusercontent.com/ebe2git/apigw-test-repo/main/OrderService/order.xsd"/>
     </xsd:schema>
   </types>
 
